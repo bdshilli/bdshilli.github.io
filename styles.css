@@ -1,18 +1,18 @@
 body {
-    background: yellow;
+    background: #00ffff;
     font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-    color: pink;
+    color: #0000ff;
     text-align: center;
 }
 .assign {
     display: flex;
     padding: 10px;
     margin: 10px;
-    background: red;
+    background: #000000;
 }
 .assign img {
     width: 200px;
-    padding: 200px;
+    padding: 10px;
 }

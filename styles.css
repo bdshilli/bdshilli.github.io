@@ -4,7 +4,7 @@ body {
 }
 
 #content {
-    background: #ADD8E6FF;
+    background: #489DDB;
     padding: 5px;
     width: 80%;
     margin: auto;
@@ -13,25 +13,33 @@ body {
 
 #main-nav a {
     text-decoration: none;
-    background: darkcyan;
-    color: black;
+    background: #2559DB;
+    color: #25C8DB;
     padding: 5px;
     border-radius: 2px;
 }
 
+#main-nav a:hover {
+    background: #2F25DB;
+}
+
 h1 {
-    color: blue;
+    font-family: "Comic Sans MS";
+    color: #5605DC;
 }
 
 h2 {
-    color: blue;
+    font-family: "Comic Sans MS";
+    color: #5605DC;
 }
 
 p {
-    color: black
+    font-family: "Comic Sans MS";
+    color: #2555DB
 }
 
 a {
+    font-family: "Comic Sans MS";
     text-decoration: none;
-    color: black;
+    color: #2555DB;
 }

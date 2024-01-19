@@ -50,8 +50,14 @@ img {
     border: 2px;
 }
 
-table, tr, th {
+table, tr{
     background: #2559DB;
+    padding: 5px;
+    border: 2px;
+}
+
+th {
+    background: #489DDB;
     padding: 5px;
     border: 2px;
 }

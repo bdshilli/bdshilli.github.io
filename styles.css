@@ -1,11 +1,9 @@
 body {
-    font-famiy: sans-serif;
+    font-famiy: Arial, sans-serif;
     background: url(images/ocean.jpg);
 }
 
 #content {
-    font-family: sans-serif;
-    text-decoration: none;
     background: #ADD8E6FF;
     padding: 5px;
     width: 80%;
@@ -19,4 +17,17 @@ body {
     color: black;
     padding: 5px;
     border-radius: 2px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: darkblue;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
 }

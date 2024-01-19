@@ -10,3 +10,11 @@ body {
     margin: auto;
     border-radius: 5px;
 }
+
+#main-nav a {
+    text-decoration: none;
+    background: darkcyan;
+    color: black;
+    padding: 5px;
+    border-radius: 2px;
+}

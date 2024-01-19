@@ -27,6 +27,11 @@ h2 {
     color: blue;
 }
 
+p {
+    color: black
+}
+
 a {
     text-decoration: none;
+    color: black;
 }

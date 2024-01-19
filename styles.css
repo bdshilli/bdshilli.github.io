@@ -5,6 +5,7 @@ body {
 
 #content {
     font-family: sans-serif;
+    text-decoration: none;
     background: #ADD8E6FF;
     padding: 5px;
     width: 80%;

@@ -4,6 +4,7 @@ body {
 }
 
 #content {
+    font-family: sans-serif;
     background: #ADD8E6FF;
     padding: 5px;
     width: 80%;

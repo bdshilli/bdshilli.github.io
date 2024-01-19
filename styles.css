@@ -20,15 +20,19 @@ body {
 }
 
 h1 {
-    color: darkblue;
+    color: cornflowerblue;
     font-family: "Comic Sans MS";
 }
 
 h2 {
-    color: darkblue;
+    color: cornflowerblue;
 }
 
 a {
-    color: darkblue;
+    color: cornflowerblue;
     text-decoration: none;
+}
+
+p {
+    color: cornflowerblue;
 }

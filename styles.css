@@ -1,10 +1,10 @@
 body {
     font-famiy: sans-serif;
-    background: white;
+    background: #FFFFFFFF;
 }
 
 #content {
-    background: white;
+    background: #ADD8E6FF;
     padding: 5px;
     width: 80%;
     margin: auto;

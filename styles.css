@@ -1,0 +1,12 @@
+body {
+    font-famiy: Arial;
+    background: lightblue;
+}
+
+#content {
+    background: white;
+    padding: 5px;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+}

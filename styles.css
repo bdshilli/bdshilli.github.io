@@ -57,8 +57,8 @@ table, tr{
 }
 
 th {
+    font-family: "Comic Sans MS";
     background: #489DDB;
     padding: 5px;
     border: 2px;
 }
-

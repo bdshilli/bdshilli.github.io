@@ -1,6 +1,7 @@
 body {
     font-famiy: "Comic Sans MS", cursive, sans-serif;
     background: lightblue;
+    text-decoration: none;
 }
 
 #content {

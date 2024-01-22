@@ -1,0 +1,64 @@
+body {
+    font-famiy: Arial, sans-serif;
+    background: url(Images/ocean.jpg);
+}
+
+#content {
+    background: #489DDB;
+    padding: 5px;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    background: #2559DB;
+    color: #25C8DB;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#main-nav a:hover {
+    background: #2F25DB;
+}
+
+h1 {
+    font-family: "Comic Sans MS";
+    color: #5605DC;
+}
+
+h2 {
+    font-family: "Comic Sans MS";
+    color: #5605DC;
+}
+
+p {
+    font-family: "Comic Sans MS";
+    color: #2555DB
+}
+
+a {
+    font-family: "Comic Sans MS";
+    text-decoration: none;
+    color: #2555DB;
+}
+
+img {
+    background: #2559DB;
+    padding: 5px;
+    border: 2px;
+}
+
+table, tr{
+    background: #2559DB;
+    padding: 5px;
+    border: 2px;
+}
+
+th {
+    font-family: "Comic Sans MS";
+    background: #489DDB;
+    padding: 5px;
+    border: 2px;
+}

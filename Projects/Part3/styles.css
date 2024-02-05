@@ -1,25 +1,34 @@
 /* Structure */
 
 body {
-    background-color: lightgray;
+    background-color: lightblue;
+    margin: 0px;
+    padding: 0px;
 }
 
 .banner {
-
+    background-color: gray;
+    text-align: center;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .main-nav-bar {
-
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
 }
 
 .page-content {
-
+    background-color: gray;
 }
 
 /* Main Ul */
 
 .main-nav-bar ul {
-
+    margin: 0px;
+    padding: 0px;
 }
 
 .main-nav-bar li {
@@ -28,4 +37,9 @@ body {
 
 .main-nav-bar a {
 
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
 }

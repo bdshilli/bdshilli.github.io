@@ -68,7 +68,8 @@ p {
 
 @media only screen and (min-width: 900px) {
     .flex-container {
-        display: flex;
+        display: inline-flex;
+        justify-content: center;
     }
 
     .assignment {

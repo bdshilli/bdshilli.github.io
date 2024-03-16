@@ -46,7 +46,10 @@
 .slider {
     height: 30px;
 }
-
+/* Navigation */
+#main-nav ul {
+    padding-left: 0px;
+}
 /* Typography */
 
 body {

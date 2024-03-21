@@ -28,19 +28,19 @@ textBox.addEventListener('input', function() {
                 commandImage.src = "images/read.jpg";
                 break;
             case "c":
-                commandImage.src = "Images/clown.jpg";
+                commandImage.src = "images/clown.jpg";
                 break;
             case "p":
-                commandImage.src = "Images/birthday.jpg";
+                commandImage.src = "images/birthday.jpg";
                 break;
             case "r":
-                commandImage.src = "Images/rain.jpg";
+                commandImage.src = "images/rain.jpg";
                 break;
             case "s":
-                commandImage.src = "Images/shovel.jpg";
+                commandImage.src = "images/shovel.jpg";
                 break;
             case "w":
-                commandImage.src = "Images/work.jpg";
+                commandImage.src = "images/work.jpg";
                 break;
             default:
                 break;
@@ -58,28 +58,28 @@ yogaSlider.addEventListener('input', function() {
     if (value) {
         switch (value) {
             case 1:
-                sliderImage.src = "Images/yoga1.jpg";
+                sliderImage.src = "images/yoga1.jpg";
                 break;
             case 2:
-                sliderImage.src = "Images/yoga2.jpg";
+                sliderImage.src = "images/yoga2.jpg";
                 break;
             case 3:
-                sliderImage.src = "Images/yoga3.jpg";
+                sliderImage.src = "images/yoga3.jpg";
                 break;
             case 4:
-                sliderImage.src = "Images/yoga4.jpg";
+                sliderImage.src = "images/yoga4.jpg";
                 break;
             case 5:
-                sliderImage.src = "Images/yoga5.jpg";
+                sliderImage.src = "images/yoga5.jpg";
                 break;
             case 6:
-                sliderImage.src = "Images/yoga6.jpg";
+                sliderImage.src = "images/yoga6.jpg";
                 break;
             case 7:
-                sliderImage.src = "Images/yoga7.jpg";
+                sliderImage.src = "images/yoga7.jpg";
                 break;
             case 8:
-                sliderImage.src = "Images/yoga8.jpg";
+                sliderImage.src = "images/yoga8.jpg";
                 break;
             default:
                 break;

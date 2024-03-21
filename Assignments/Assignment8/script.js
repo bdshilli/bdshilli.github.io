@@ -25,7 +25,7 @@ textBox.addEventListener('input', function() {
         const lastChar = userInput.charAt(userInput.length - 1);
         switch (lastChar) {
             case "b":
-                commandImage.src = "Images/read.jpg";
+                commandImage.src = "images/read.jpg";
                 break;
             case "c":
                 commandImage.src = "Images/clown.jpg";

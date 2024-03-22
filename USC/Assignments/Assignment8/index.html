@@ -16,30 +16,45 @@
         <h2>If Statements</h2>
         <nav id="main-nav">
             <div id="nav-toggle">
+                <a id="up">^</a>
+                <a id="down">v</a>
             </div>
             <ul id="main-nav-items">
-                <li><button class="btn-e1">Exercise 1</button></li>
-                <li><button class="btn-e2">Exercise 2</button></li>
+                <li>
+                    <button class="button" id="btn-e1">Exercise 1</button>
+                </li>
+                <li>
+                    <button class="button" id="btn-e2">Exercise 2</button>
+                </li>
             </ul>
         </nav>
         <div class="flex-container">
             <section class="container">
-                <section id="enter-command">
+                <section id="entercommand">
                     <h2>Enter Command</h2>
-                    <ul id="command-list">
-                        <li><a>b: Read a book</a></li>
-                        <li><a>c: Act like a clown</a></li>
-                        <li><a>p: Have a birthday party</a></li>
-                        <li><a>r: Walk in the rain</a></li>
-                        <li><a>s: Shovel up some dirt</a></li>
-                        <li><a>w: Go to work</a></li>
-                    </ul>
-                    <input type="text" id="text-box" />
+                    <section class="containerContent">
+                        <ul id="command-list">
+                            <li><a>b: Read a book</a></li>
+                            <li><a>c: Act like a clown</a></li>
+                            <li><a>p: Have a birthday party</a></li>
+                            <li><a>r: Walk in the rain</a></li>
+                            <li><a>s: Shovel up some dirt</a></li>
+                            <li><a>w: Go to work</a></li>
+                        </ul>
+                        <img class="image" id="command-image" src="images/original.jpg"/>
+                        <input type="text" id="text-box" style="width: 50%"/>
+                    </section>
+                    Image by
                     <a href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20832062.htm#query=stick%20figure%20run&position=46&from_view=search&track=ais&uuid=22e87991-ee06-4dc2-8ea3-464d535e1a63">Freepik</a>
                 </section>
                 <section id="yoga-slider">
                     <h2>Yoga Slide</h2>
-                    <input type="range" id="slider" min="0" max="8" value="0" step="1" />
+                    <section class="containerContent">
+                        <img class="image" id="slider-image" src="images/yoga1.jpg"/>
+                        <input type="range" id="slider" min="1" max="8" value="1" step="1" style="width: 50%"/>
+                    </section>
+                    Image by
+                    <a href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20832062.htm#query=stick%20figure%20run&position=46&from_view=search&track=ais&uuid=22e87991-ee06-4dc2-8ea3-464d535e1a63">Freepik</a>
                 </section>
             </section>
         </div>

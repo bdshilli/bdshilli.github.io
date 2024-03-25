@@ -1,0 +1,39 @@
+/* Structure */
+body {
+    background: url(images/skin.jpg);
+}
+/* Navigation */
+#mainNav ul {
+    padding-left: 1px;
+}
+
+#mainNav li {
+    margin-left: 3px;
+    list-style-type: none;
+    background-color: peachpuff;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid darkred;
+}
+
+#mainNav a {
+    text-decoration: none;
+    color: saddlebrown;
+}
+
+/* Typography */
+
+.a {
+    color: red;
+}
+/* Larger Resolution */
+
+@media only screen and (min-width: 900px) {
+    #mainNav ul {
+        display: flex;
+    }
+
+    #mainNav li {
+        flex: 1;
+    }
+}

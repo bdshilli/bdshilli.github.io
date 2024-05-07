@@ -1,0 +1,37 @@
+/* Structure */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:skyblue;
+}
+
+div {
+    background: gray;
+    width:70%;
+    margin:auto; /*Centering*/
+    padding:5px;
+}
+
+/* Images */
+
+img {
+    border-color: darkblue;
+}
+
+/* Typogrophy */
+h1 {
+    color: darkblue
+}
+
+h2 {
+    color: blue;
+}
+
+strong {
+    background-color: yellow;
+    padding:1px;
+    text-decoration: underline;
+}
+/* Navigation */
+
+
+/* Larger Resolutions */

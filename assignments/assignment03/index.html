@@ -10,7 +10,7 @@
                 <h1>Layout with Flex</h1>
         
                 <nav id="main-nav">
-                    <ul>
+                    <ul class="columns">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Blog</a></li>
@@ -21,8 +21,8 @@
                 </nav>
             </header>
             <main id="main-content">
-                <section>
-                    <div id="information">
+                <section class="columns">
+                    <div id="information" class="columns wrap four">
                         <section>
                             <h3>Title 1</h3>
                             <img src="https://placehold.co/200/salmon/white">
@@ -80,7 +80,7 @@
                             </p>
                         </section>
                     </div>
-                    <aside id="main-sidebar">
+                    <aside id="main-sidebar" class="one">
                         <h2>Links</h2>
                         <ul>
                             <li><a href="#">Item 1</a></li>
@@ -90,12 +90,47 @@
                         </ul>
                     </aside>
                 </section>
-                <section>
-
+                <section id="bottom-content">
+                    <div>
+                        <h2>Big Ideas!</h2>
+                        <section class="columns">
+                            <div class="one">
+                                <img src="https://placehold.co/200/salmon/white">
+                            </div>
+                            <div class="four">
+                                <h3>Idea 1</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis dapibus vehicula. Morbi eget magna ac neque volutpat maximus et at justo. Integer fermentum eros at turpis sagittis, vel malesuada neque lacinia. Proin placerat tristique vehicula.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="columns">
+                            <div class="one">
+                                <img src="https://placehold.co/200/salmon/white">
+                            </div>
+                            <div class="four">
+                                <h3>Idea 2</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis dapibus vehicula. Morbi eget magna ac neque volutpat maximus et at justo. Integer fermentum eros at turpis sagittis, vel malesuada neque lacinia. Proin placerat tristique vehicula.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="columns">
+                            <div class="one">
+                                <img src="https://placehold.co/200/salmon/white">
+                            </div>
+                            <div class="four">
+                                <h3>Idea 3</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis dapibus vehicula. Morbi eget magna ac neque volutpat maximus et at justo. Integer fermentum eros at turpis sagittis, vel malesuada neque lacinia. Proin placerat tristique vehicula.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
                 </section>
             </main>
             <footer id="main-footer">
-                
+                <a>@bdshilli.github.io</a>
             </footer>
         </div>
     </body>

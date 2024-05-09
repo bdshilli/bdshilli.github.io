@@ -1,19 +1,20 @@
 /* Structure */
 :root {
     --primary-color: salmon;
-    --secondary-color: teal;
+    --secondary-color: #a4bfb8;
     --background-color: rgb(255, 229, 196);
 }
 
 body {
     background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #content {
     background-color: var(--background-color);
-    border-width: 10px;
+    border-width: 1px;
     border-color: var(--secondary-color);
-
+    border-style: solid;
 }
 
 #main-header {
@@ -21,22 +22,144 @@ body {
 }
 
 #main-content {
-
+    
 }
 
 #information {
+    background: var(--secondary-color);
+    margin: 0;
+}
 
+#information section {
+    text-align: center;
+    padding: 10px;
 }
 
 #main-sidebar {
-
+    background: var(--primary-color);
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--secondary-color);
 }
+
+#bottom-content {
+    padding: 20px;
+}
+
+#bottom-content section {
+    text-align: center;
+    padding: 10px;
+}
+
+#main-footer {
+    text-align: center;
+    padding: 5px;
+}
+
 /* Typography */
 
 #main-header h1 {
-    color: var(--secondary-color);
+    color: teal;
     text-align: center;
+}
+
+#information section h3 {
+    color: white;
+    text-align: center;
+}
+
+#information section p {
+    color: white;
+    text-align: left;
+}
+
+#main-sidebar {
+    padding: 15px;
+}
+
+#main-sidebar h2 {
+    color: white;
+}
+
+#main-sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#main-sidebar a {
+    color: white;
+}
+
+#bottom-content h2, h3, p {
+    color: teal;
+    text-align: left;
+}
+
+
+#main-footer a {
+    color: teal;
 }
 
 /* Main-Nav */
 
+#main-nav ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#main-nav li {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 5px;
+    border-color: var(--secondary-color);
+    border-width: 1px;
+    border-style: solid;
+    margin: 1px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+/*Media Query*/
+@media only screen and (min-width: 600px) {
+    .columns {
+        display: flex;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+
+    #information section {
+        flex: 20%;
+    }
+    
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    .five {
+        flex: 5;
+    }
+
+}

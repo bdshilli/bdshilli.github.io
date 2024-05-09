@@ -1,0 +1,42 @@
+/* Structure */
+:root {
+    --primary-color: salmon;
+    --secondary-color: teal;
+    --background-color: rgb(255, 229, 196);
+}
+
+body {
+    background-color: lightgray;
+}
+
+#content {
+    background-color: var(--background-color);
+    border-width: 10px;
+    border-color: var(--secondary-color);
+
+}
+
+#main-header {
+
+}
+
+#main-content {
+
+}
+
+#information {
+
+}
+
+#main-sidebar {
+
+}
+/* Typography */
+
+#main-header h1 {
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+/* Main-Nav */
+

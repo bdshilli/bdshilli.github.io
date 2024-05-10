@@ -24,6 +24,7 @@ body {
 
 #main-content {
     padding: 5px;
+    width: fit-content;
 }
 
 #main-footer {

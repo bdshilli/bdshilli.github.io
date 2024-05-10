@@ -8,21 +8,42 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: var(--tertiary-color);
+    background: var(--background-color);
     background-size: 100%;
 }
 
 #content {
-    background: white;
+    
 }
 
-#main-header, #main-footer {
-    background: var(--background-color);
+#main-header {
+   justify-content: center;
 }
 
-#main-content ul li a {
-    text-decoration: none;
-    color: var(--secondary-color);
+#main-footer {
+    
+}
+
+#assignments {
+    text-align: center;
+}
+
+#assignments section {
+    text-align: center;
+    background-color: var(--tertiary-color);
+    padding: 5px;
+    margin: 20px;
+    width: fit-content;
+}
+
+/* name */
+
+#name {
+    width: fit-content;
+    position: absolute;
+    font-size: medium;
+    top: 100px;
+    left: 60px;
 }
 
 /* Typography */
@@ -33,11 +54,47 @@ body {
 }
 
 #main-content h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+#assignments h2 {
     color: var(--secondary-color);
+    text-align: center;
+}
+
+#assignments p {
+    color: var(--secondary-color);
+    font-size: larger;
     text-align: center;
 }
 
 p {
     text-align: center;
+}
+
+/* Media Query */
+/* for larger devices */
+@media only screen and (min-width: 600px) {
+
+    .columns {
+        display: flex;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    #assignments section {
+        flex: 30%;
+    }
+
+    #name {
+        top: 0px;
+        left: 0px;
+    }
+
+    
+
 }
 

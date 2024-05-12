@@ -19,13 +19,17 @@ body {
 #heading {
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 0.5%;
     background-color: black;
     margin: 0px;
 }
 
-#logo {
+.logo {
     max-width: 350PX;
-    
+}
+
+#heading section {
+   float: right;
 }
 
 #search {
@@ -64,6 +68,10 @@ body {
     border-color: gray;
 }
 
+#top-info img {
+    width: 100%
+}
+
 #bottom-info {
 
 }
@@ -98,51 +106,34 @@ body {
     list-style-type: none;
 }
 
-#side-content h2 {
-    font-size: large;
-}
-
-#side-content a {
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
 #main-footer {
     
 }
 
 #top-subfooting {
-    background-color: gray;
+    background-color: lightgray;
     padding-left: 10%;
     padding-right: 10%;
 }
 
-#top-subfooting h3 {
-    justify-content: left;
-}
-
 #top-subfooting ul {
+    flex: 1;
     list-style-type: none;
-    justify-content: right;
-    
-    
+    align-items: center;
+    margin: 0;
 }
 
 #top-subfooting li {
-
-}
-
-#top-subfooting a {
-    color: black;
-    font-size: medium;
-    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 10%;
 }
 
 #footing {
     background-color: var(--primary-color);
     padding-left: 10%;
     padding-right: 10%;
-    
+    padding-top: 0.5%;
 }
 
 #footing ul {
@@ -160,20 +151,6 @@ body {
 .link-lists {
     padding: 15px;
     margin: 0;
-}
-
-.link-lists h3 {
-    color: white;
-    border: 0px;
-    border-bottom: 1px;
-    border-color: white;
-    border-style: solid;
-}
-
-#footing a {
-    text-decoration: none;
-    color: white;
-    font-size: small;
 }
 
 #bottom-subfooting {
@@ -197,13 +174,6 @@ body {
     text-align: center;
 }
 
-#bottom-subfooting a {
-    color: white;
-    font-size: small;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
 .right-border {
     border: 0;
     border-right: 1px;
@@ -223,6 +193,15 @@ body {
     font-weight: bolds;
 }
 
+#side-content h2 {
+    font-size: large;
+}
+
+#side-content a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 #top-info p {
     font-size: larger;
 }
@@ -230,6 +209,39 @@ body {
 a:hover {
     color: white;
     background-color: red;
+}
+
+#top-subfooting h3 {
+    flex: 1;
+    font-size: larger;
+}
+
+#top-subfooting a {
+    color: black;
+    font-size: medium;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-lists h3 {
+    color: white;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: white;
+    border-style: solid;
+}
+
+#footing a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+#bottom-subfooting a {
+    color: white;
+    font-size: small;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 /* Main Navigation */
@@ -240,9 +252,7 @@ a:hover {
     margin: 0px;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 0;
-    padding-bottom: 0;
-    float: right;
+    justify-content: right;
 }
 
 #main-nav ul {

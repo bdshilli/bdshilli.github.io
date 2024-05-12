@@ -90,6 +90,7 @@ body {
     font-size: large;
     font-weight: bold;
     color: var(--primary-color);
+    white-space: nowrap;
 }
 
 #side-content section {

@@ -24,11 +24,11 @@ body {
     
 }
 
-#assignments {
+.assignments {
     text-align: center;
 }
 
-#assignments section {
+.assignments section {
     text-align: center;
     background-color: var(--tertiary-color);
     padding: 5px;
@@ -58,12 +58,12 @@ body {
     text-align: center;
 }
 
-#assignments h2 {
+.assignments h2 {
     color: var(--secondary-color);
     text-align: center;
 }
 
-#assignments p {
+.assignments p {
     color: var(--secondary-color);
     font-size: larger;
     text-align: center;
@@ -85,7 +85,7 @@ p {
         flex-wrap: wrap;
     }
 
-    #assignments section {
+    .assignments section {
         flex: 30%;
     }
 
@@ -93,8 +93,6 @@ p {
         top: 0px;
         left: 0px;
     }
-
     
-
 }
 

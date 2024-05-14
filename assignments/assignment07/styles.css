@@ -1,0 +1,45 @@
+/* Structure */
+:root {
+    --primary-color: salmon;
+    --secondary-color: #a4bfb8;
+    --background-color: rgb(255, 229, 196);
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#main-content div section {
+    margin: 5%;
+    background-color: white;
+}
+
+#pt1 {
+    background-color: teal;
+}
+
+
+/* Typography */
+
+
+/* Main-Nav */
+
+
+
+/*Media Query*/
+@media only screen and (min-width: 600px) {
+    .columns {
+        display: flex;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+    
+    .one {
+        flex: 1;
+    }
+
+}

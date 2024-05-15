@@ -16,8 +16,8 @@ body {
     padding: 2%;
     background-color: white;
     position: relative;
-    min-width: 200px;
-    min-height: 400px;
+    min-width: 100px;
+    min-height: 200px;
     text-align: center;
 }
 

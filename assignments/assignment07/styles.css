@@ -13,23 +13,57 @@ body {
 
 #main-content div section {
     margin: 5%;
+    padding: 2%;
     background-color: white;
+    position: relative;
+    min-width: 400px;
+    min-height: 600px;
+    text-align: center;
 }
 
 #pt1 {
     background-color: teal;
 }
 
+.hidden {
+    display: none;
+}
+
+#randomImage {
+    max-width: 400px;
+}
+
+#slider {
+    width: 300px;
+}
+
+#movingImg {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    left: 0px;
+}
+
 
 /* Typography */
 
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: teal;
+}
+
+#num {
+    color: teal;
+    font-size: xx-large;
+}
 
 /* Main-Nav */
 
-
-
 /*Media Query*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
     .columns {
         display: flex;
     }

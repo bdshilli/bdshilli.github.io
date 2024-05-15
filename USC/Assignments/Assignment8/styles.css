@@ -112,7 +112,7 @@ h2 {
 
     #main-nav li:not(:last-child)::after {
         content: " | ";
-        margin-left: 20px;
+        margin: 0px;
     }
 
 }

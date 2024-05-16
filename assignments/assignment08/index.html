@@ -2,13 +2,13 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
-        <title>My Title</title>
+        <title>Assignment 8</title>
     </head>
     <body>
         <div id="content">
             <header id="main-header">
-                <h1>Main title</h1>
-                <h2>Sub Title</h2>
+                <h1>Assignment 8</h1>
+                <h2>If Statements</h2>
                 <nav id="main-nav">
                     <div id="toggle">
                         <div id="up">
@@ -18,22 +18,29 @@
                             v
                         </div>
                     </div>
-                    <ul id="main-nav-ul" class="columns hide-small">
+                    <ul id="main-nav-ul" class="hide-small">
                         <li><a href="#" id="toggle-e1">exercise 1</a></li>
                         <li><a href="#" id="toggle-e2">exercise 2</a></li>
                     </ul>
                 </nav>
             </header>
             <main id="main-content">
-                <div>
-                    <section id="exercise1">
-                        <h2>Color Slider</h2>
-                        <input type="range" id="colorSlider" min="0" max="300" value="0" step="1" />
-                    </section>
-                    <section id="exercise2" class="hidden">
-                        <h1>e2</h1>
-                    </section>
-                </div>
+                <section id="exercise1">
+                    <h1>Color Slider</h1>
+                    <input type="range" id="colorSlider" min="0" max="255" value="0" step="1" />
+                    <p id="color-text">
+                        
+                    </p>
+                </section>
+                <section id="exercise2" class="hidden">
+                    <h1>Picture Chooser</h1>
+                    <ul id="buttons">
+                        <li><button id="small">Small</button></li>
+                        <li><button id="medium">Medium</button></li>
+                        <li><button id="large">Large</button></li>
+                    </ul>
+                    <img id="picture" src="">
+                </section>
             </main>
             <footer id="main-footer">
                 

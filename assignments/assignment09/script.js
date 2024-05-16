@@ -17,10 +17,11 @@ const validNum = (num, errorId) =>{
 
 //Loop Stars
 document.getElementById("btn-loops").onclick = () => {
-    const numStars = document.getElementById("txt-num");
+
+    const numStars = document.getElementById("txt-num").value;
+    console.log(numStars);
     if(!validNum(numStars, "error-num")){
         return;
-    } else {
-        
     }
+
 }

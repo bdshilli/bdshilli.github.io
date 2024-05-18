@@ -3,9 +3,7 @@
     --secondary-color: #D98179;
     --background-color:#A6A6A6;
     --header-bg:#D9D9D9;
-    --ball-left:0px;
-    --ball-top:0px;
-    --funds: 75%
+    --star-color: yellow;
 }
 
 body {
@@ -36,12 +34,11 @@ body {
     max-width: fit-content;
 }
 
-#main-content section div {
-    padding: 5px;
+#div-stars {
     background: black;
     width: 400px;
     height: 400px;
-
+    position: relative;
 }
 
 #main-footer {
@@ -57,13 +54,33 @@ body {
     background:white;
 }
 
-/* Hide / Show */
-.hidden {
-    display:none;
+.star {              /* Star Code Copied from https://www.coding-dude.com/wp/css/css-star/ */               
+    --sqrt-3:1.73205080757;
+    margin: 0 auto;
+    font-size:0.4em;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-bottom: calc( 1em * var(--sqrt-3) ) solid var(--star-color);
 }
 
-.hide-small {
-    display:none;
+.star:after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left:-1em;
+    top:calc( 1em * var(--sqrt-3) / 3 );
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-top: calc( 1em * var(--sqrt-3)  ) solid var(--star-color);
+}
+
+.special {
+    padding: 5px;
+    color: black;
 }
 
 /* Typography */
@@ -82,10 +99,4 @@ h2 {
 
 .error {
     color: red;
-}
-
-.special {
-    background: magenta;
-    padding: 5px;
-    color: black;
 }

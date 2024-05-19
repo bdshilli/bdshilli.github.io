@@ -60,11 +60,19 @@
     margin-top: 5px;
 }
 
-    /* Main-content artists */
+/* Main-content artists */
 
-    #artists .box {
+#artists .box {
         margin-top: 10px;
-    }
+}
+
+.search-bar img {
+    width: 20px;
+}
+
+#search-text {
+    
+}
 
 /* Main Nav */
 #main-nav {
@@ -130,8 +138,7 @@
     }
 
     #main-header div {
-        display: flex;
-        justify-content: space-between;
+        
     }
 
     #main-header h1 {
@@ -141,8 +148,10 @@
     }
 
     #main-nav {
-        float: right;
+        text-align: right;
         width: 300px;
+        position: relative;
+        top: 20px;
     }
 
     #main-nav ul {
@@ -151,6 +160,9 @@
 
     #main-nav li {
         flex: 1;
+        max-width: fit-content;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     /* main-content (home) */
@@ -166,8 +178,10 @@
         max-width: fit-content;
     }
 
-    #search-bar {
+    .search-bar {
         text-align: right;
+        position: relative;
+        top: 20px;
         margin-bottom: 0;
     }
 }

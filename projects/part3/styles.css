@@ -5,10 +5,66 @@
 }
 
 #main-header {
-    margin-left: 15%;
-    margin-right: 15%;
     justify-content: center;
 }
+
+.margins {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 0;
+}
+
+#main-content {
+    text-align: center;
+}
+
+.box {
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    max-width: fit-content;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.box ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.box a {
+    text-decoration: none;
+    color: black;
+}
+
+#top-trending {
+
+}
+
+#explore {
+    justify-content: center;
+}
+
+#explore section {
+    padding: 10px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    max-width: fit-content;
+}
+
+#explore .box {
+    margin-right: 0;
+    margin-top: 5px;
+}
+
+    /* Main-content artists */
+
+    #artists .box {
+        margin-top: 10px;
+    }
 
 /* Main Nav */
 #main-nav {
@@ -68,11 +124,14 @@
 
     /* header */
     #main-header {
-        display: flex;
-        justify-content: space-between;
         border-bottom-width: 2px;
         border-bottom-style: solid;
         border-bottom-color: lightgrey;
+    }
+
+    #main-header div {
+        display: flex;
+        justify-content: space-between;
     }
 
     #main-header h1 {
@@ -92,5 +151,23 @@
 
     #main-nav li {
         flex: 1;
+    }
+
+    /* main-content (home) */
+
+    #main-content {
+        text-align: left;
+    }
+
+    /* main-content (artists) */
+
+    .subheadding h2 {
+        margin-bottom: 0;
+        max-width: fit-content;
+    }
+
+    #search-bar {
+        text-align: right;
+        margin-bottom: 0;
     }
 }

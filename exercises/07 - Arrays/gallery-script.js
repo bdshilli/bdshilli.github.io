@@ -20,5 +20,5 @@ document.querySelectorAll(".items section").forEach((section) => {
 });
 
 document.getElementById("dialog-x").onclick = () => {
-  document.getElementById("dialog").classList.add("hidden");
+  dialog.style.display = "none";
 };

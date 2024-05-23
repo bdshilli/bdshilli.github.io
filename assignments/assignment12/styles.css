@@ -1,0 +1,86 @@
+:root {
+  --primary-color: #f26f63;
+  --secondary-color: #d98179;
+  --background-color: #a6a6a6;
+  --header-bg: #d9d9d9;
+  --star-color: yellow;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+#main-header,
+#main-footer {
+  padding: 5px;
+}
+
+#main-content {
+  padding: 5px;
+}
+
+#main-content section {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Container and Overlay */
+/*Copied from https://www.javatpoint.com/oprweb/test.jsp?filename=CSSoverlay1, then edited to fit my needs */
+
+.container img {
+  height: 150px;
+  width: 250px;
+}
+
+.container {
+  position: relative;
+  height: auto;
+  margin: 10px;
+  padding: 0;
+}
+
+.overlay {
+  position: absolute;
+  transition: 0.5s ease;
+  width: 250px;
+  bottom: 0;
+  background-color: grey;
+  opacity: 0;
+}
+
+.container:hover .overlay {
+  opacity: 0.8;
+}
+
+/* Typography */
+#information h3 {
+  text-align: center;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+h2 {
+  color: var(--secondary-color);
+}
+
+/* Larger Display */
+
+@media only screen and (min-width: 600px) {
+  .columns {
+    display: flex;
+  }
+
+  .one {
+    flex: 1;
+  }
+}

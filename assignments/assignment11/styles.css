@@ -23,15 +23,25 @@ body {
 
 #main-content {
   padding: 5px;
-  text-align: center;
 }
 
 #main-content section {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main-content section div {
   padding: 10px;
+  margin: 10px;
   background: teal;
   border-style: solid;
   border-width: 1px;
   border-color: navy;
+  width: 300px;
+  height: 350px;
+  flex: 1;
 }
 
 #picture-display {
@@ -62,4 +72,24 @@ h1 {
 
 h2 {
   color: var(--secondary-color);
+}
+
+/* Larger Display */
+
+@media only screen and (min-width: 600px) {
+  .columns {
+    display: flex;
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+  }
+
+  .gallery section {
+    flex: 22%;
+  }
+
+  .one {
+    flex: 1;
+  }
 }

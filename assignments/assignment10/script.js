@@ -1,39 +1,39 @@
-//loops
-const validNum = (num, errorId) =>{
-    const errorSpan = document.getElementById(errorId);
-    errorSpan.innerHTML = "";
+const pictures = [
+  "birthday.jpg",
+  "clown.jpg",
+  "rain.jpg",
+  "read.jpg",
+  "shovel.jpg",
+  "work.jpg",
+];
 
-    if(isNaN(num)){
-        errorSpan.innerHTML = "* Not a number";
-        return false;
-    }
-    else if(num < 0){
-        errorSpan.innerHTML = "* Number should be >= 0";
-        return false;
-    }
+const descriptions = [];
+descriptions["birthday.jpg"] = "Happy Birthday!!";
+descriptions["clown.jpg"] = "Honk Honk";
+descriptions["rain.jpg"] = "Glad I Brought My Umbrella";
+descriptions["read.jpg"] = "Shhh!! Be Quiet!";
+descriptions["shovel.jpg"] = "Don't Break Your Back!";
+descriptions["work.jpg"] = "Creating Some Code";
 
-    return true;
-}
+const titles = [];
+titles["birthday.jpg"] = "birthday";
+titles["clown.jpg"] = "clown";
+titles["rain.jpg"] = "rain";
+titles["read.jpg"] = "read";
+titles["shovel.jpg"] = "shovel";
+titles["work.jpg"] = "work";
 
-//Loop Stars
-document.getElementById("btn-draw").onclick = () => {
-    const numStars = document.getElementById("txt-num").value;
-    console.log(numStars);
-    if(!validNum(numStars, "error-num")){
-        return;
-    }
-    const starDiv = document.getElementById("div-stars");
-    starDiv.innerHTML = "";
-    for(let i = 0; i < numStars ; i++) {
-        const star = document.createElement("div");
-        star.classList.add("star");
-        star.style.setProperty("left", ((Math.random() * 387)) + "px");
-        star.style.setProperty("bottom", (4 + (Math.random() * 386)) + "px");
-        starDiv.appendChild(star);
-        star.onclick = () => {
-            const special = document.getElementById("info")
-            special.innerHTML = `You clicked star ${i+1}`;
-        }
-    }
+(() => {
+  const pictureDisplay = document.getElementById("picture-display");
 
-}
+  pictures.forEach((picture) => {
+    const img = document.createElement("img");
+    img.src = "images/" + picture;
+    pictureDisplay.appendChild(img);
+
+    img.onclick = () => {
+      document.getElementById("headding").innerHTML = titles[picture];
+      document.getElementById("text").innerHTML = descriptions[picture];
+    };
+  });
+})();

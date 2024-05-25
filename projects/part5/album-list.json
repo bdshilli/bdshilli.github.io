@@ -1,0 +1,258 @@
+[
+    {
+        "_id": "1",
+        "title": "Album Title",
+        "image": "file name",
+        "genre": "Genre",
+        "advisory": "Explicit",
+        "artist_list": [
+            {
+                "name": "Artist Name"
+            },
+            {
+                "name": "Artist Name"
+            }
+        ],
+        "song_list": [
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            }
+        ]
+    },
+    {
+        "_id": "2",
+        "title": "Album Title",
+        "image": "file name",
+        "genre": "Genre",
+        "advisory": "Explicit",
+        "artist_list": [
+            {
+                "name": "Artist Name"
+            },
+            {
+                "name": "Artist Name"
+            }
+        ],
+        "song_list": [
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            }
+        ]
+    },
+    {
+        "_id": "3",
+        "title": "Album Title",
+        "image": "file name",
+        "genre": "Genre",
+        "advisory": "Explicit",
+        "artist_list": [
+            {
+                "name": "Artist Name"
+            },
+            {
+                "name": "Artist Name"
+            }
+        ],
+        "song_list": [
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            }
+        ]
+    },
+    {
+        "_id": "4",
+        "title": "Album Title",
+        "image": "file name",
+        "genre": "Genre",
+        "advisory": "Explicit",
+        "artist_list": [
+            {
+                "name": "Artist Name"
+            },
+            {
+                "name": "Artist Name"
+            }
+        ],
+        "song_list": [
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            }
+        ]
+    },
+    {
+        "_id": "5",
+        "title": "Album Title",
+        "image": "file name",
+        "genre": "Genre",
+        "advisory": "Explicit",
+        "artist_list": [
+            {
+                "name": "Artist Name"
+            },
+            {
+                "name": "Artist Name"
+            }
+        ],
+        "song_list": [
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            }
+        ]
+    },
+    {
+        "_id": "6",
+        "title": "Album Title",
+        "image": "file name",
+        "genre": "Genre",
+        "advisory": "Explicit",
+        "artist_list": [
+            {
+                "name": "Artist Name"
+            },
+            {
+                "name": "Artist Name"
+            }
+        ],
+        "song_list": [
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            }
+        ]
+    },
+    {
+        "_id": "7",
+        "title": "Album Title",
+        "image": "file name",
+        "genre": "Genre",
+        "advisory": "Explicit",
+        "artist_list": [
+            {
+                "name": "Artist Name"
+            },
+            {
+                "name": "Artist Name"
+            }
+        ],
+        "song_list": [
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            }
+        ]
+    },
+    {
+        "_id": "8",
+        "title": "Album Title",
+        "image": "file name",
+        "genre": "Genre",
+        "advisory": "Explicit",
+        "artist_list": [
+            {
+                "name": "Artist Name"
+            },
+            {
+                "name": "Artist Name"
+            }
+        ],
+        "song_list": [
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            },
+            {
+                "title": "Song Title",
+                "length": "3:00",
+                "audio": "file name"
+            }
+        ]
+    }
+]

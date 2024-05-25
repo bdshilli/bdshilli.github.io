@@ -1,5 +1,5 @@
 let topView = 0;
-let currentAlbum = null;
+let currentAlbum = "";
 
 //toggling the navigation bar
 document.getElementById("toggle").onclick = () => {
@@ -90,7 +90,9 @@ const getSong = (song, album) => {
   return li;
 };
 
-const showAlbum = (currentAlbum) => {
+const showAlbum = (currentAlbumTitle) => {
+  console.log(currentAlbumTitle);
+  /*
   const albumTitle = document.getElementById("album-title");
   const albumImage = document.getElementById("album-image");
 
@@ -98,19 +100,22 @@ const showAlbum = (currentAlbum) => {
   albumImage.src =
     "file:///C:/Users/bdshi/Desktop/VSCode/bdshilli.github.io/projects/part5/images/albums/" +
     currentAlbum.image;
+    */
 };
+
+//https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem
+window.addEventListener("unload", () => {
+  localStorage.setItem("currentAlbumTitle", JSON.stringify(currentAlbum.title));
+});
+
+window.addEventListener("load", () => {
+  const currentAlbumTitle =
+    JSON.parse(localStorage.getItem("currentAlbumTitle")) || "";
+  console.log(currentAlbumTitle);
+});
 
 if (document.URL.includes("index.html")) {
   showTrending();
 } else if (document.URL.includes("album.html")) {
-  showAlbum(currentAlbum);
+  //showAlbum(currentAlbumTitleC);
 }
-
-window.addEventListener("unload", () => {
-  localStorage.setItem("currentAlbum", currentAlbum);
-});
-
-window.addEventListener("load", () => {
-  currentAlbum = localStorage.getItem("currentAlbum") || "";
-  console.log(currentAlbum);
-});

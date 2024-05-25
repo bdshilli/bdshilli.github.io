@@ -23,6 +23,7 @@ const showTrending = async () => {
   let count = 0;
 
   trendingList = document.getElementById("top-trending-list");
+  trendingList.innerHTML = "";
   await getTopView();
   for (let i = topView; i > -1; i--) {
     albums.forEach((album) => {
@@ -59,9 +60,7 @@ const getSong = (song, album) => {
   const img = document.createElement("img");
   const imga = document.createElement("a");
   imga.href = "album.html";
-  img.src =
-    "file:///C:/Users/bdshi/Desktop/VSCode/bdshilli.github.io/projects/part5/images/albums/" +
-    image;
+  img.src = "images/albums/" + image;
   imga.append(img);
   li.append(imga);
 
@@ -79,6 +78,30 @@ const getSong = (song, album) => {
   songLi.append(songTitleB);
   ul.append(songLi);
 
+  //song album
+  const albumLi = document.createElement("li");
+  const albumTitle = document.createElement("a");
+  albumTitle.innerHTML = album.title;
+  albumTitle.href = "album.html";
+  albumLi.append(albumTitle);
+  ul.append(albumLi);
+
+  //song artist list
+  const artistList = document.createElement("ul");
+  const artistListLi = document.createElement("li");
+  artistList.classList.add("artist-list");
+  artistListLi.append(artistList);
+  ul.append(artistListLi);
+  album.artist_list.forEach((artist) => {
+    console.log(artist.name);
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = "artist.html";
+    a.innerHTML = artist.name;
+    li.append(a);
+    artistList.append(li);
+  });
+
   imga.onclick = () => {
     currentAlbum = album;
   };
@@ -90,17 +113,98 @@ const getSong = (song, album) => {
   return li;
 };
 
-const showAlbum = (currentAlbumTitle) => {
-  console.log(currentAlbumTitle);
-  /*
+const showAlbum = async (currentAlbumTitle) => {
+  const albums = await getAlbums();
+  let album = albums.find((album) => album.title === currentAlbumTitle);
+  currentAlbum = album;
+
+  console.log(album);
+
   const albumTitle = document.getElementById("album-title");
   const albumImage = document.getElementById("album-image");
+  const albumArtists = document.getElementById("artist-list");
+  const albumGenre = document.getElementById("album-genre");
+  const albumAdvisory = document.getElementById("album-advisory");
+  const songList = document.getElementById("song-list");
 
-  albumTitle.innerHTML = currentAlbum.title;
-  albumImage.src =
-    "file:///C:/Users/bdshi/Desktop/VSCode/bdshilli.github.io/projects/part5/images/albums/" +
-    currentAlbum.image;
-    */
+  albumTitle.innerHTML = album.title;
+  albumImage.src = "images/albums/" + album.image;
+  albumImage.style.width = "200px";
+
+  albumArtists.innerHTML = "";
+  album.artist_list.forEach((artist) => {
+    console.log(artist.name);
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.innerHTML = artist.name;
+    a.href = "artist.html";
+    li.append(a);
+    albumArtists.append(li);
+  });
+
+  albumGenre.innerHTML = album.genre;
+  albumAdvisory.innerHTML = album.advisory;
+
+  songList.innerHTML = "";
+  album.song_list.forEach((song) => {
+    songList.append(getSongLi(song, album));
+  });
+};
+
+const getSongLi = (song, album) => {
+  const li = document.createElement("li");
+  li.classList.add("song");
+
+  const left = document.createElement("ul");
+  left.classList.add("left");
+  li.append(left);
+
+  const right = document.createElement("div");
+  right.classList.add("right");
+  li.append(right);
+
+  //song title
+  const songTitle = document.createElement("a");
+  const songTitleLi = document.createElement("li");
+  songTitle.innerHTML = song.title;
+  songTitleLi.append(songTitle);
+  left.append(songTitleLi);
+
+  //song artist
+  const artistList = document.createElement("ul");
+  const artistListLi = document.createElement("li");
+  artistList.classList.add("artist-list");
+  artistListLi.append(artistList);
+  left.append(artistListLi);
+  album.artist_list.forEach((artist) => {
+    console.log(artist.name);
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.innerHTML = artist.name;
+    li.append(a);
+    artistList.append(li);
+  });
+
+  //song duration
+  const duration = document.createElement("a");
+  duration.innerHTML = song.length;
+  right.append(duration);
+
+  //shopping cart
+  const cart = document.createElement("a");
+  const cartIcon = document.createElement("img");
+  cartIcon.src = "images/icons8-add-shopping-cart-30.png";
+  cart.append(cartIcon);
+  right.append(cart);
+
+  //play button
+  const play = document.createElement("a");
+  const playIcon = document.createElement("img");
+  playIcon.src = "images/icons8-play-30.png";
+  play.append(playIcon);
+  right.append(play);
+
+  return li;
 };
 
 //https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem

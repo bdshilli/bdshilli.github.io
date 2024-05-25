@@ -13,52 +13,84 @@
     "song_list": [
       {
         "title": "Wolf Bork",
-        "views": "1100",
-        "length": "3:00",
+        "views": "1000",
+        "length": "1:20",
         "audio": "file name"
       },
       {
         "title": "Bork Bork",
-        "views": "1300",
-        "length": "3:00",
+        "views": "2000",
+        "length": "4:00",
         "audio": "file name"
       },
       {
         "title": "Wolf Wolf Bork",
-        "views": "900",
-        "length": "3:00",
+        "views": "1000",
+        "length": "3:30",
         "audio": "file name"
       }
     ]
   },
   {
     "_id": "2",
-    "title": "Dog Days",
-    "image": "benji.jpg",
-    "genre": "Lofi",
+    "title": "Cat Nights",
+    "image": "pip.jpg",
+    "genre": "ASMR",
     "advisory": "SFW",
     "artist_list": [
       {
-        "name": "Benji"
+        "name": "Pip"
       }
     ],
     "song_list": [
       {
-        "title": "Wolf Bork",
-        "views": "1100",
+        "title": "Shattering Glass",
+        "views": "2000",
+        "length": "2:15",
+        "audio": "file name"
+      },
+      {
+        "title": "Jumping in the Dark",
+        "views": "1000",
         "length": "3:00",
         "audio": "file name"
       },
       {
-        "title": "Bork Bork",
-        "views": "1300",
-        "length": "3:00",
+        "title": "Constant Meowing",
+        "views": "1000",
+        "length": "3:10",
+        "audio": "file name"
+      }
+    ]
+  },
+  {
+    "_id": "3",
+    "title": "Redneck Rap",
+    "image": "nic.jpg",
+    "genre": "Rap",
+    "advisory": "Explicit",
+    "artist_list": [
+      {
+        "name": "Nic"
+      }
+    ],
+    "song_list": [
+      {
+        "title": "Rivian Grind",
+        "views": "2000",
+        "length": "4:23",
         "audio": "file name"
       },
       {
-        "title": "Wolf Wolf Bork",
-        "views": "900",
-        "length": "3:00",
+        "title": "City Boy",
+        "views": "1000",
+        "length": "2:16",
+        "audio": "file name"
+      },
+      {
+        "title": "Uh Oh my Truck Broke Down",
+        "views": "1000",
+        "length": "2:13",
         "audio": "file name"
       }
     ]

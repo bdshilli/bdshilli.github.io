@@ -22,23 +22,20 @@ const showTrending = async () => {
   const albums = await getAlbums();
 
   trendingList = document.getElementById("top-trending-list");
-  getTopView();
-  console.log(albums);
-  console.log(topView);
+  await getTopView();
 };
 
 const getTopView = async () => {
   const albums = await getAlbums();
   albums.forEach((album) => {
     album.song_list.forEach((song) => {
-      for (let song in album.song_list) {
-        console.log(song.views);
-        if (song.views > topView) {
-          topView = song.views;
-        }
+      console.log(song.views);
+      if (song.views > topView) {
+        topView = song.views;
       }
     });
   });
+  console.log(topView);
 };
 
 const getAlbum = (album) => {

@@ -161,74 +161,74 @@
   },
   {
     "_id": "6",
-    "title": "Dog Days",
-    "image": "benji.jpg",
-    "genre": "Lofi",
-    "advisory": "SFW",
+    "title": "In the Dark",
+    "image": "eye.jpg",
+    "genre": "Rock",
+    "advisory": "Explicit",
     "artist_list": [
       {
-        "name": "Benji"
+        "name": "Billy"
       }
     ],
     "song_list": [
       {
-        "title": "Wolf Bork",
-        "views": "1000",
-        "length": "3:00",
+        "title": "Run",
+        "views": "3000",
+        "length": "2:18",
         "audio": "file name"
       },
       {
-        "title": "Bork Bork",
-        "views": "2000",
-        "length": "3:00",
+        "title": "Hide",
+        "views": "1000",
+        "length": "2:20",
         "audio": "file name"
       },
       {
-        "title": "Wolf Wolf Bork",
+        "title": "Distant Stalker",
         "views": "1000",
-        "length": "3:00",
+        "length": "1:50",
         "audio": "file name"
       }
     ]
   },
   {
     "_id": "7",
-    "title": "Dog Days",
-    "image": "benji.jpg",
-    "genre": "Lofi",
+    "title": "Bidet",
+    "image": "bidet.jpg",
+    "genre": "Commedy",
     "advisory": "SFW",
     "artist_list": [
       {
-        "name": "Benji"
+        "name": "Jack"
       }
     ],
     "song_list": [
       {
-        "title": "Wolf Bork",
+        "title": "Toilet Humor",
         "views": "1000",
-        "length": "3:00",
+        "length": "1:00",
         "audio": "file name"
       },
       {
-        "title": "Bork Bork",
-        "views": "2000",
-        "length": "3:00",
+        "title": "I Don't Know",
+        "views": "3000",
+        "length": "1:50",
         "audio": "file name"
       },
       {
-        "title": "Wolf Wolf Bork",
+        "title": "Something a Kid Would Laugh At",
         "views": "1000",
-        "length": "3:00",
+        "length": "2:16",
         "audio": "file name"
       }
     ]
   },
   {
     "_id": "8",
-    "title": "Dog Days",
-    "image": "benji.jpg",
-    "genre": "Lofi",
-    "advisory": "SFW",
+    "title": "Indecisive",
+    "image": "nic2.png",
+    "genre": "Rap",
+    "advisory": "NSFW",
     "artist_list": [
       {
         "name": "Benji"
@@ -236,21 +236,21 @@
     ],
     "song_list": [
       {
-        "title": "Wolf Bork",
+        "title": "What to Do",
         "views": "1000",
-        "length": "3:00",
+        "length": "1:26",
         "audio": "file name"
       },
       {
-        "title": "Bork Bork",
+        "title": "I Can't Choose",
         "views": "2000",
-        "length": "3:00",
+        "length": "3:50",
         "audio": "file name"
       },
       {
-        "title": "Wolf Wolf Bork",
-        "views": "1000",
-        "length": "3:00",
+        "title": "Under Preasure",
+        "views": "3000",
+        "length": "2:16",
         "audio": "file name"
       }
     ]

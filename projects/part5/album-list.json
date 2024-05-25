@@ -94,5 +94,165 @@
         "audio": "file name"
       }
     ]
+  },
+  {
+    "_id": "4",
+    "title": "Stepdad Vibes",
+    "image": "bradley2.jpg",
+    "genre": "Hard Rock",
+    "advisory": "Explicit",
+    "artist_list": [
+      {
+        "name": "Big Brad"
+      }
+    ],
+    "song_list": [
+      {
+        "title": "Deadbeat Dad",
+        "views": "9000",
+        "length": "3:19",
+        "audio": "file name"
+      },
+      {
+        "title": "Jobless",
+        "views": "1000",
+        "length": "1:50",
+        "audio": "file name"
+      },
+      {
+        "title": "I'm not your real dad",
+        "views": "1000",
+        "length": "3:00",
+        "audio": "file name"
+      }
+    ]
+  },
+  {
+    "_id": "5",
+    "title": "Party Night",
+    "image": "bradley.jpg",
+    "genre": "House",
+    "advisory": "Explicit",
+    "artist_list": [
+      {
+        "name": "Big Brad"
+      }
+    ],
+    "song_list": [
+      {
+        "title": "Loud Noises",
+        "views": "1000",
+        "length": "3:35",
+        "audio": "file name"
+      },
+      {
+        "title": "Alcohol Poisoning",
+        "views": "1000",
+        "length": "3:40",
+        "audio": "file name"
+      },
+      {
+        "title": "Cops are Here",
+        "views": "3000",
+        "length": "3:23",
+        "audio": "file name"
+      }
+    ]
+  },
+  {
+    "_id": "6",
+    "title": "Dog Days",
+    "image": "benji.jpg",
+    "genre": "Lofi",
+    "advisory": "SFW",
+    "artist_list": [
+      {
+        "name": "Benji"
+      }
+    ],
+    "song_list": [
+      {
+        "title": "Wolf Bork",
+        "views": "1000",
+        "length": "3:00",
+        "audio": "file name"
+      },
+      {
+        "title": "Bork Bork",
+        "views": "2000",
+        "length": "3:00",
+        "audio": "file name"
+      },
+      {
+        "title": "Wolf Wolf Bork",
+        "views": "1000",
+        "length": "3:00",
+        "audio": "file name"
+      }
+    ]
+  },
+  {
+    "_id": "7",
+    "title": "Dog Days",
+    "image": "benji.jpg",
+    "genre": "Lofi",
+    "advisory": "SFW",
+    "artist_list": [
+      {
+        "name": "Benji"
+      }
+    ],
+    "song_list": [
+      {
+        "title": "Wolf Bork",
+        "views": "1000",
+        "length": "3:00",
+        "audio": "file name"
+      },
+      {
+        "title": "Bork Bork",
+        "views": "2000",
+        "length": "3:00",
+        "audio": "file name"
+      },
+      {
+        "title": "Wolf Wolf Bork",
+        "views": "1000",
+        "length": "3:00",
+        "audio": "file name"
+      }
+    ]
+  },
+  {
+    "_id": "8",
+    "title": "Dog Days",
+    "image": "benji.jpg",
+    "genre": "Lofi",
+    "advisory": "SFW",
+    "artist_list": [
+      {
+        "name": "Benji"
+      }
+    ],
+    "song_list": [
+      {
+        "title": "Wolf Bork",
+        "views": "1000",
+        "length": "3:00",
+        "audio": "file name"
+      },
+      {
+        "title": "Bork Bork",
+        "views": "2000",
+        "length": "3:00",
+        "audio": "file name"
+      },
+      {
+        "title": "Wolf Wolf Bork",
+        "views": "1000",
+        "length": "3:00",
+        "audio": "file name"
+      }
+    ]
   }
 ]

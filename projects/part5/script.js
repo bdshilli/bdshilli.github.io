@@ -28,11 +28,11 @@ const showTrending = async () => {
   for (let i = topView; i > -1; i--) {
     albums.forEach((album) => {
       album.song_list.forEach((song) => {
-        if (song.views == i || count <= 4) {
+        if (song.views == i && count <= 7) {
           trendingList.append(getSong(song, album));
           console.log(song.title);
           count++;
-        } else if (count > 4) {
+        } else if (count > 7) {
           i = -5;
         }
       });
@@ -207,7 +207,7 @@ const getSongLi = (song, album) => {
   return li;
 };
 
-//https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem
+//help from https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem
 window.addEventListener("unload", () => {
   localStorage.setItem("currentAlbumTitle", JSON.stringify(currentAlbum.title));
 });

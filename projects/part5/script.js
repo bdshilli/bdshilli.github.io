@@ -6,7 +6,7 @@ document.getElementById("toggle").onclick = () => {
 };
 
 const getAlbums = async () => {
-  const json = "album-list.json";
+  const json = "https://bdshilli.github.io/projects/part5/album-list.json";
   try {
     const response = await fetch(json);
     return response.json();
@@ -19,25 +19,29 @@ const showTrending = async () => {
   const albums = await getAlbums();
   console.log(albums);
 
-  /*
-  trendingSection = document.getElementById("top-trending-list");
+  trendingList = document.getElementById("top-trending-list");
   albums.forEach((album) => {
-    trendingSection.append(getAlbum(album));
-  }); */
+    (album.song_list).forEach((song))
+    trendingList.append(getAlbum(album));
+  });
 };
-/*
 const getAlbum = (album) => {
   const li = document.createElement("li");
-  div.classList.add("box");
+  li.classList.add("box");
 
   //image
   const image = album.image;
   const img = document.createElement("img");
-  img.src = "https://portiaportia.github.io/json/images/ice-creams/" + image;
-  div.append(img);
+  img.src = "file:///C:/Users/bdshi/Desktop/VSCode/bdshilli.github.io/projects/part5/images/albums/" + image;
+  li.append(img);
 
-  //overlay
-  const overlay = document.createElement("div");
+  //song info
+  const ul = document.createElement("ul");
+  li.append(ul);
+
+  //song title
+  const songTitle = document.createElement("a");
+  title.innerHTML = 
   overlay.classList.add("overlay");
   const h3 = document.createElement("h3");
   h3.innerHTML = flavor.name;
@@ -46,5 +50,4 @@ const getAlbum = (album) => {
 
   return div;
 };
-*/
 showTrending();

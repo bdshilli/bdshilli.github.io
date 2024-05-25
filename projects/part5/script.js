@@ -1,3 +1,6 @@
+let topView = 0;
+let currentAlbum = null;
+
 //toggling the navigation bar
 document.getElementById("toggle").onclick = () => {
   document.getElementById("main-nav-ul").classList.toggle("hide-small");
@@ -17,14 +20,27 @@ const getAlbums = async () => {
 
 const showTrending = async () => {
   const albums = await getAlbums();
-  console.log(albums);
 
   trendingList = document.getElementById("top-trending-list");
+  getTopView();
+  console.log(albums);
+  console.log(topView);
+};
+
+const getTopView = async () => {
+  const albums = await getAlbums();
   albums.forEach((album) => {
-    (album.song_list).forEach((song))
-    trendingList.append(getAlbum(album));
+    album.song_list.forEach((song) => {
+      for (let song in album.song_list) {
+        console.log(song.views);
+        if (song.views > topView) {
+          topView = song.views;
+        }
+      }
+    });
   });
 };
+
 const getAlbum = (album) => {
   const li = document.createElement("li");
   li.classList.add("box");
@@ -32,7 +48,9 @@ const getAlbum = (album) => {
   //image
   const image = album.image;
   const img = document.createElement("img");
-  img.src = "file:///C:/Users/bdshi/Desktop/VSCode/bdshilli.github.io/projects/part5/images/albums/" + image;
+  img.src =
+    "file:///C:/Users/bdshi/Desktop/VSCode/bdshilli.github.io/projects/part5/images/albums/" +
+    image;
   li.append(img);
 
   //song info
@@ -41,8 +59,7 @@ const getAlbum = (album) => {
 
   //song title
   const songTitle = document.createElement("a");
-  title.innerHTML = 
-  overlay.classList.add("overlay");
+  title.innerHTML = overlay.classList.add("overlay");
   const h3 = document.createElement("h3");
   h3.innerHTML = flavor.name;
   overlay.append(h3);

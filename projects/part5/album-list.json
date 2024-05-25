@@ -2,7 +2,7 @@
   {
     "_id": "1",
     "title": "Album Title",
-    "image": "file name",
+    "image": "benji.jpg",
     "genre": "Genre",
     "advisory": "Explicit",
     "artist_list": [
@@ -37,7 +37,7 @@
   {
     "_id": "2",
     "title": "Album Title",
-    "image": "file name",
+    "image": "nic.jpg",
     "genre": "Genre",
     "advisory": "Explicit",
     "artist_list": [
@@ -72,7 +72,7 @@
   {
     "_id": "3",
     "title": "Album Title",
-    "image": "file name",
+    "image": "benji.jpg",
     "genre": "Genre",
     "advisory": "Explicit",
     "artist_list": [
@@ -107,7 +107,7 @@
   {
     "_id": "4",
     "title": "Album Title",
-    "image": "file name",
+    "image": "benji.jpg",
     "genre": "Genre",
     "advisory": "Explicit",
     "artist_list": [
@@ -142,7 +142,7 @@
   {
     "_id": "5",
     "title": "Album Title",
-    "image": "file name",
+    "image": "benji.jpg",
     "genre": "Genre",
     "advisory": "Explicit",
     "artist_list": [
@@ -177,7 +177,7 @@
   {
     "_id": "6",
     "title": "Album Title",
-    "image": "file name",
+    "image": "benji.jpg",
     "genre": "Genre",
     "advisory": "Explicit",
     "artist_list": [
@@ -212,7 +212,7 @@
   {
     "_id": "7",
     "title": "Album Title",
-    "image": "file name",
+    "image": "benji.jpg",
     "genre": "Genre",
     "advisory": "Explicit",
     "artist_list": [
@@ -247,7 +247,7 @@
   {
     "_id": "8",
     "title": "Album Title",
-    "image": "file name",
+    "image": "benji.jpg",
     "genre": "Genre",
     "advisory": "Explicit",
     "artist_list": [

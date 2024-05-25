@@ -20,25 +20,37 @@ const getAlbums = async () => {
 
 const showTrending = async () => {
   const albums = await getAlbums();
+  let count = 0;
 
   trendingList = document.getElementById("top-trending-list");
   await getTopView();
+  for (let i = topView; i > -1; i--) {
+    albums.forEach((album) => {
+      album.song_list.forEach((song) => {
+        if (song.views == i || count <= 4) {
+          trendingList.append(getSong(song, album));
+          console.log(song.title);
+          count++;
+        } else if (count > 4) {
+          i = -5;
+        }
+      });
+    });
+  }
 };
 
 const getTopView = async () => {
   const albums = await getAlbums();
   albums.forEach((album) => {
     album.song_list.forEach((song) => {
-      console.log(song.views);
       if (song.views > topView) {
         topView = song.views;
       }
     });
   });
-  console.log(topView);
 };
 
-const getAlbum = (album) => {
+const getSong = (song, album) => {
   const li = document.createElement("li");
   li.classList.add("box");
 
@@ -55,13 +67,19 @@ const getAlbum = (album) => {
   li.append(ul);
 
   //song title
+  const songTitleB = document.createElement("b");
   const songTitle = document.createElement("a");
-  title.innerHTML = overlay.classList.add("overlay");
-  const h3 = document.createElement("h3");
-  h3.innerHTML = flavor.name;
-  overlay.append(h3);
-  div.append(overlay);
+  const songLi = document.createElement("li");
+  songTitle.innerHTML = song.title;
+  songTitleB.append(songTitle);
+  songLi.append(songTitleB);
+  ul.append(songLi);
 
-  return div;
+  li.onclick = () => {
+    currentAlbum = album;
+    console.log(album);
+  };
+
+  return li;
 };
 showTrending();

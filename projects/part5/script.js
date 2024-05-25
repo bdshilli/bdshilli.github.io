@@ -57,10 +57,13 @@ const getSong = (song, album) => {
   //image
   const image = album.image;
   const img = document.createElement("img");
+  const imga = document.createElement("a");
+  imga.href = "album.html";
   img.src =
     "file:///C:/Users/bdshi/Desktop/VSCode/bdshilli.github.io/projects/part5/images/albums/" +
     image;
-  li.append(img);
+  imga.append(img);
+  li.append(imga);
 
   //song info
   const ul = document.createElement("ul");
@@ -71,15 +74,43 @@ const getSong = (song, album) => {
   const songTitle = document.createElement("a");
   const songLi = document.createElement("li");
   songTitle.innerHTML = song.title;
+  songTitle.href = "album.html";
   songTitleB.append(songTitle);
   songLi.append(songTitleB);
   ul.append(songLi);
 
-  li.onclick = () => {
+  imga.onclick = () => {
     currentAlbum = album;
-    console.log(album);
+  };
+
+  songTitle.onclick = () => {
+    currentAlbum = album;
   };
 
   return li;
 };
-showTrending();
+
+const showAlbum = (currentAlbum) => {
+  const albumTitle = document.getElementById("album-title");
+  const albumImage = document.getElementById("album-image");
+
+  albumTitle.innerHTML = currentAlbum.title;
+  albumImage.src =
+    "file:///C:/Users/bdshi/Desktop/VSCode/bdshilli.github.io/projects/part5/images/albums/" +
+    currentAlbum.image;
+};
+
+if (document.URL.includes("index.html")) {
+  showTrending();
+} else if (document.URL.includes("album.html")) {
+  showAlbum(currentAlbum);
+}
+
+window.addEventListener("unload", () => {
+  localStorage.setItem("currentAlbum", currentAlbum);
+});
+
+window.addEventListener("load", () => {
+  currentAlbum = localStorage.getItem("currentAlbum") || "";
+  console.log(currentAlbum);
+});

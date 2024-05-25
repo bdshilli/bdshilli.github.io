@@ -108,14 +108,8 @@ window.addEventListener("unload", () => {
   localStorage.setItem("currentAlbumTitle", JSON.stringify(currentAlbum.title));
 });
 
-window.addEventListener("load", () => {
-  const currentAlbumTitle =
-    JSON.parse(localStorage.getItem("currentAlbumTitle")) || "";
-  console.log(currentAlbumTitle);
-});
-
 if (document.URL.includes("index.html")) {
   showTrending();
 } else if (document.URL.includes("album.html")) {
-  //showAlbum(currentAlbumTitleC);
+  showAlbum(JSON.parse(localStorage.getItem("currentAlbumTitle")) || "");
 }

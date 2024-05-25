@@ -1,34 +1,31 @@
 [
   {
     "_id": "1",
-    "title": "Album Title",
+    "title": "Dog Days",
     "image": "benji.jpg",
-    "genre": "Genre",
-    "advisory": "Explicit",
+    "genre": "Lofi",
+    "advisory": "SFW",
     "artist_list": [
       {
-        "name": "Artist Name"
-      },
-      {
-        "name": "Artist Name"
+        "name": "Benji"
       }
     ],
     "song_list": [
       {
-        "title": "Song Title",
-        "views": "1000",
+        "title": "Wolf Bork",
+        "views": "1100",
         "length": "3:00",
         "audio": "file name"
       },
       {
-        "title": "Song Title",
-        "views": "1000",
+        "title": "Bork Bork",
+        "views": "1300",
         "length": "3:00",
         "audio": "file name"
       },
       {
-        "title": "Song Title",
-        "views": "1000",
+        "title": "Wolf Wolf Bork",
+        "views": "900",
         "length": "3:00",
         "audio": "file name"
       }
@@ -36,244 +33,31 @@
   },
   {
     "_id": "2",
-    "title": "Album Title",
-    "image": "nic.jpg",
-    "genre": "Genre",
-    "advisory": "Explicit",
-    "artist_list": [
-      {
-        "name": "Artist Name"
-      },
-      {
-        "name": "Artist Name"
-      }
-    ],
-    "song_list": [
-      {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      },
-      {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      },
-      {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      }
-    ]
-  },
-  {
-    "_id": "3",
-    "title": "Album Title",
+    "title": "Dog Days",
     "image": "benji.jpg",
-    "genre": "Genre",
-    "advisory": "Explicit",
+    "genre": "Lofi",
+    "advisory": "SFW",
     "artist_list": [
       {
-        "name": "Artist Name"
-      },
-      {
-        "name": "Artist Name"
+        "name": "Benji"
       }
     ],
     "song_list": [
       {
-        "title": "Song Title",
-        "views": "1000",
+        "title": "Wolf Bork",
+        "views": "1100",
         "length": "3:00",
         "audio": "file name"
       },
       {
-        "title": "Song Title",
-        "views": "1000",
+        "title": "Bork Bork",
+        "views": "1300",
         "length": "3:00",
         "audio": "file name"
       },
       {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      }
-    ]
-  },
-  {
-    "_id": "4",
-    "title": "Album Title",
-    "image": "benji.jpg",
-    "genre": "Genre",
-    "advisory": "Explicit",
-    "artist_list": [
-      {
-        "name": "Artist Name"
-      },
-      {
-        "name": "Artist Name"
-      }
-    ],
-    "song_list": [
-      {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      },
-      {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      },
-      {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      }
-    ]
-  },
-  {
-    "_id": "5",
-    "title": "Album Title",
-    "image": "benji.jpg",
-    "genre": "Genre",
-    "advisory": "Explicit",
-    "artist_list": [
-      {
-        "name": "Artist Name"
-      },
-      {
-        "name": "Artist Name"
-      }
-    ],
-    "song_list": [
-      {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      },
-      {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      },
-      {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      }
-    ]
-  },
-  {
-    "_id": "6",
-    "title": "Album Title",
-    "image": "benji.jpg",
-    "genre": "Genre",
-    "advisory": "Explicit",
-    "artist_list": [
-      {
-        "name": "Artist Name"
-      },
-      {
-        "name": "Artist Name"
-      }
-    ],
-    "song_list": [
-      {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      },
-      {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      },
-      {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      }
-    ]
-  },
-  {
-    "_id": "7",
-    "title": "Album Title",
-    "image": "benji.jpg",
-    "genre": "Genre",
-    "advisory": "Explicit",
-    "artist_list": [
-      {
-        "name": "Artist Name"
-      },
-      {
-        "name": "Artist Name"
-      }
-    ],
-    "song_list": [
-      {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      },
-      {
-        "title": "Song Title 4",
-        "views": "10100",
-        "length": "3:00",
-        "audio": "file name"
-      },
-      {
-        "title": "Song Title",
-        "views": "1000",
-        "length": "3:00",
-        "audio": "file name"
-      }
-    ]
-  },
-  {
-    "_id": "8",
-    "title": "Album Title",
-    "image": "benji.jpg",
-    "genre": "Genre",
-    "advisory": "Explicit",
-    "artist_list": [
-      {
-        "name": "Artist Name"
-      },
-      {
-        "name": "Artist Name"
-      }
-    ],
-    "song_list": [
-      {
-        "title": "Song Title 1",
-        "views": "100000",
-        "length": "3:00",
-        "audio": "file name"
-      },
-      {
-        "title": "Song Title 2",
-        "views": "10000",
-        "length": "3:00",
-        "audio": "file name"
-      },
-      {
-        "title": "Song Title",
-        "views": "1001",
+        "title": "Wolf Wolf Bork",
+        "views": "900",
         "length": "3:00",
         "audio": "file name"
       }

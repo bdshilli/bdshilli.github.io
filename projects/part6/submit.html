@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Indie Tunes</title>
+  </head>
+  <body>
+    <div id="content">
+      <header id="main-header">
+        <div class="margins columns">
+          <h1 class="one">Indie Tunes</h1>
+          <nav id="main-nav">
+            <div id="toggle">
+              <div id="up">^</div>
+              <div id="down" class="hidden">v</div>
+            </div>
+            <ul id="main-nav-ul" class="columns one">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="artists.html">Artists</a></li>
+              <li><a href="genres.html">Genres</a></li>
+              <li><a href="cart.html">Cart</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main id="main-content">
+        <div id="genre" class="margins">
+          <section>
+            <h2>Submit an Album</h2>
+            <p>Submit an album here and we will post it to the website!</p>
+            <form id="album-form">
+              <section>
+                <section>
+                  <p>
+                    <label for="name">Album Title:</label>
+                    <input
+                      id="album-title"
+                      type="text"
+                      placeholder="album name"
+                      name="name"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <label for="artists">Artists:</label>
+                    <input
+                      id="artists"
+                      name="artists"
+                      placeholder="seperate artists with commas"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <label for="message">Genre:</label>
+                    <textarea
+                      id="genre"
+                      tyoe="text"
+                      name="genre"
+                      placeholder="Your Genre Here!"
+                      required
+                    ></textarea>
+                  </p>
+                  <p>
+                    <label for="advisory">Is your content explicit?</label>
+                    <select name="advisory">
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                    </select>
+                  </p>
+                  <p>
+                    <label for="songs">Song Titles:</label>
+                    <input
+                      id="songs"
+                      name="songs"
+                      placeholder="seperate titles with commas"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <label for="email">Preferred Email:</label>
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      placeholder="example@email.com"
+                      required
+                    />
+                  </p>
+                </section>
+                <p>
+                  <button id="submit-album" type="submit">Submit Album</button>
+                </p>
+              </section>
+              <p id="album-result"></p>
+            </form>
+          </section>
+          <section id="album-results"></section>
+        </div>
+      </main>
+      <footer id="main-footer">
+        <div id="contact-footer" class="margins">
+          <a href="contact.html">Contact Us</a>
+          <a>|</a>
+          <a href="submit.html">Submit Album</a>
+        </div>
+        <div id="reasources-footer" class="margins">
+          <p>&copy; 2024 Indie Tunes</p>
+          Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </div>
+      </footer>
+    </div>
+    <script src="submitalbum.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -13,8 +13,7 @@ document.getElementById("form-raccoon").onsubmit = (e) => {
   e.preventDefault(); //dont go to the action page
   const form = e.target;
   const racoonName = form.elements["raccoon-name"].value;
-  const demeanor = form.elements["demeanor"].valu;
-  e;
+  const demeanor = form.elements["demeanor"].value;
   const termsChecked = form.elements["terms"].checked;
   const termsText = "You agrred to the terms";
   const radio = getRadioValue("size");

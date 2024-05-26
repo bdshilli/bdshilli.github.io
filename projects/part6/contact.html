@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Indie Tunes</title>
+  </head>
+  <body>
+    <div id="content">
+      <header id="main-header">
+        <div class="margins columns">
+          <h1 class="one">Indie Tunes</h1>
+          <nav id="main-nav">
+            <div id="toggle">
+              <div id="up">^</div>
+              <div id="down" class="hidden">v</div>
+            </div>
+            <ul id="main-nav-ul" class="columns one">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="artists.html">Artists</a></li>
+              <li><a href="genres.html">Genres</a></li>
+              <li><a href="cart.html">Cart</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main id="main-content">
+        <div id="genre" class="margins">
+          <section>
+            <h2>Contact Us</h2>
+            <p>Have any questions? Feel free to contact us!</p>
+            <form
+              id="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <section>
+                <section>
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="167bb82b-aaea-4d75-bf74-134dbe65ff4b"
+                  />
+                  <p>
+                    <label for="name">Name:</label>
+                    <input
+                      id="name"
+                      type="text"
+                      placeholder="First and Last Name"
+                      name="name"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <label for="email">Email:</label>
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      placeholder="example@email.com"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <label for="message">Message:</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Type your message here!"
+                      required
+                    ></textarea>
+                  </p>
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://web3forms.com/success"
+                  />
+                  <input
+                    type="hidden"
+                    name="subject"
+                    value="Contact from Indie Tunes Website"
+                  />
+                  <input type="hidden" name="from_name" value="My Website" />
+                </section>
+
+                <p>
+                  <button type="submit">Send Message</button>
+                </p>
+              </section>
+
+              <p id="result"></p>
+            </form>
+          </section>
+          <section class="">
+            <h2>Our Location</h2>
+            <iframe
+              id="map"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3338.117663546334!2d-79.10859491236755!3d33.21101139332728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDEyJzM5LjYiTiA3OcKwMDYnMTMuNCJX!5e0!3m2!1sen!2sus!4v1716758423769!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </section>
+        </div>
+      </main>
+      <footer id="main-footer">
+        <div id="contact-footer" class="margins">
+          <a href="contact.html">Contact Us</a>
+          <a>|</a>
+          <a href="submit.html">Submit Album</a>
+        </div>
+        <div id="reasources-footer" class="margins">
+          <p>&copy; 2024 Indie Tunes</p>
+          Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </div>
+      </footer>
+    </div>
+    <script src="contactus.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -91,6 +91,35 @@ body {
   max-width: 100%;
   height: auto;
 }
+/* footer */
+
+#main-footer {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: var(--border-color);
+  margin-top: 10px;
+  height: fit-content;
+}
+
+#contact-footer {
+  text-align: center;
+  margin: 10px;
+}
+
+#contact-footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#contact-footer a:hover {
+  text-decoration: none;
+  color: teal;
+}
+
+#reasources-footer {
+  text-align: center;
+  margin: 10px;
+}
 
 /* Main-content artists & genres */
 .directory {
@@ -252,6 +281,51 @@ body {
   display: none;
 }
 
+button {
+  color: black;
+  background-color: #56a1a4;
+  border-color: teal;
+  font-size: medium;
+  padding: 5px;
+}
+
+button:hover {
+  color: white;
+  background-color: #56a1a4;
+  border-color: teal;
+  font-size: medium;
+  padding: 5px;
+}
+
+/* Form */
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form section section {
+  padding: 10px;
+  border-radius: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--border-color);
+  max-width: fit-content;
+  width: fit-content;
+}
+
+form section label {
+  display: block;
+  width: fit-content;
+  margin-bottom: 5px;
+}
+/*Contact Form*/
+
+#map {
+  width: 100%;
+  text-align: center;
+}
+
 /*Media Query*/
 @media only screen and (min-width: 900px) {
   .columns {
@@ -349,6 +423,12 @@ body {
   }
 
   .hide-small {
+    display: block;
+  }
+
+  /* form */
+
+  form {
     display: block;
   }
 }

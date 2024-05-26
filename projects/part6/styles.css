@@ -297,6 +297,10 @@ button:hover {
   padding: 5px;
 }
 
+#result {
+  color: green;
+}
+
 /* Form */
 
 form {

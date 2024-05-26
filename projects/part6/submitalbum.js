@@ -29,5 +29,8 @@ document.getElementById("album-form").onsubmit = (e) => {
   `;
 
   document.getElementById("album-form").reset();
-  document.getElementById("album-result").innerHTML = "Album Submitted!";
+  document.getElementById("result").innerHTML = "Album Submitted!";
+  setTimeout(() => {
+    document.getElementById("result").innerHTML = "";
+  }, 2000);
 };
